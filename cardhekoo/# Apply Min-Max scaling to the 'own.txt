@@ -1,0 +1,134 @@
+# Apply Min-Max scaling to the 'ownerNo' column
+scaler = MinMaxScaler()
+kolkataa_cars_df['ownerNo'] = scaler.fit_transform(kolkataa_cars_df[['ownerNo']])
+# List of all numerical columns for Min-Max scaling
+numerical_columns = [
+    'price', 'ft_Cng', 'ft_Diesel', 'ft_Electric', 'ft_Lpg', 'ft_Petrol', 
+    'Registration Year', 'Kms Driven','Year of Manufacture', 
+    'Height', 'Kerb Weight', 'Seating Capacity', 'Cargo Volumn', 
+    'bt_Convertibles', 'bt_Coupe', 'bt_Hatchback', 'bt_MUV', 'bt_Minivans', 
+    'bt_SUV', 'bt_Sedan', 'transmission_Automatic', 'transmission_Manual',"oem","model","modelYear","centralVariantId","variantName",
+    "price","Insurance Validity","RTO","Color","Engine Type","No of Cylinder","Value Configuration","Fuel Suppy System","Turbo Charger","Super Charger",
+    "Gear Box","Drive Type","Steering Type","km",'Engine Displacement'
+
+]
+
+# Apply Min-Max scaling to all numerical columns
+kolkataa_cars_df[numerical_columns] = scaler.fit_transform(kolkataa_cars_df[numerical_columns])
+
+
+
+
+# Initialize the Min-Max Scaler
+scaler = MinMaxScaler()
+
+# List of all numerical columns for Min-Max scaling
+numerical_columns = [
+    'price', 'ft_Cng', 'ft_Diesel', 'ft_Electric', 'ft_Lpg', 'ft_Petrol', 
+    'Registration Year', 'km', 'Engine', 'Year of Manufacture', 
+    'Height', 'Kerb Weight', 'Seating Capacity', 'Cargo Volumn', 
+    'bt_Coupe', 'bt_Hatchback', 'bt_MUV', 'bt_Minivans',"ownerNo","Mileage","Torque","Values per Cylinder",
+    'bt_SUV', 'bt_Sedan', 'transmission_Automatic', 'transmission_Manual',"Wheel Base", 
+    'oem', 'model', 'modelYear', 'centralVariantId', 'variantName', 
+    'price', 'Insurance Validity', 'RTO', 'Color', 'Engine Type', 'No of Cylinder', 
+    'Value Configuration', 'Fuel Suppy System', 'Turbo Charger', 'Super Charger', 
+    'Gear Box', 'Drive Type', 'Steering Type', 'Front Brake Type', 'Rear Brake Type'
+]
+
+# Apply Min-Max scaling to the specified numerical columns
+jaipur_cars_df[numerical_columns] = scaler.fit_transform(jaipur_cars_df[numerical_columns])
+
+
+# Initialize the MinMaxScaler
+scaler = MinMaxScaler()
+
+# List of all numerical columns for Min-Max scaling
+numerical_columns = [
+    'price', 'ft_Cng', 'ft_Diesel', 'ft_Electric', 'ft_Lpg', 'ft_Petrol', 
+    'Registration Year', 'km', 'Displacement', 'Year of Manufacture',"ownerNo",
+    'Height', 'Kerb Weight', 'Seating Capacity', 'Cargo Volumn', 
+    'bt_Hatchback', 'bt_MUV', 'bt_Minivans',"Ownership","Mileage","Torque",
+    'bt_SUV', 'bt_Sedan', 'transmission_Automatic', 'transmission_Manual',"Wheel Base", 
+    'oem', 'model', 'modelYear', 'centralVariantId', 'variantName', 
+    'price', 'Insurance Validity', 'RTO', 'Color', 'Engine Type', 'No of Cylinder', 
+    'Value Configuration', 'Fuel Suppy System', 'Turbo Charger', 'Super Charger', 
+    'Gear Box', 'Drive Type', 'Steering Type', 'Front Brake Type', 'Rear Brake Type'
+]
+
+# Apply Min-Max scaling to the specified numerical columns
+hyderabad_cars_df[numerical_columns] = scaler.fit_transform(hyderabad_cars_df[numerical_columns])
+
+
+
+# Initialize the MinMaxScaler
+scaler = MinMaxScaler()
+
+# List of all numerical columns for Min-Max scaling
+numerical_columns = [
+    'price', 'ft_Cng', 'ft_Diesel', 'ft_Electric', 'ft_Lpg', 'ft_Petrol', 
+    'Registration Year', 'km', 'Engine Displacement', 'Year of Manufacture', 
+    'Height', 'Kerb Weight', 'Seating Capacity', 'Cargo Volumn', 
+    'bt_Coupe', 'bt_Hatchback', 'bt_MUV',"ownerNo","Mileage","Torque","Values per Cylinder",
+    'bt_SUV', 'bt_Sedan', 'transmission_Automatic', 'transmission_Manual',"Wheel Base", 
+    'oem', 'model', 'modelYear', 'centralVariantId', 'variantName', 
+    'price', 'Insurance Validity', 'RTO', 'Color', 'Engine Type', 'No of Cylinder', 
+    'Value Configuration', 'Fuel Suppy System', 'Turbo Charger', 'Super Charger', 
+    'Gear Box', 'Drive Type', 'Steering Type', 'Front Brake Type', 'Rear Brake Type'
+]
+
+
+# Apply Min-Max scaling to the specified numerical columns
+delhi_cars_df[numerical_columns] = scaler.fit_transform(delhi_cars_df[numerical_columns])
+
+
+
+# Initialize the MinMaxScaler
+scaler = MinMaxScaler()
+
+# List of all numerical columns for Min-Max scaling
+numerical_columns = [
+    'price', 'ft_Cng', 'ft_Diesel', 'ft_Electric','ft_Petrol', 
+    'Registration Year', 'km', 'Engine Displacement', 'Year of Manufacture', 
+    'Height', 'Kerb Weight', 'Seating Capacity', 'Cargo Volumn', 
+    'bt_Hatchback', 'bt_MUV', "ownerNo", "Mileage", "Torque", "Values per Cylinder",
+    'bt_SUV', 'bt_Sedan', 'transmission_Automatic', 'transmission_Manual', "Wheel Base", 
+    'oem', 'model', 'modelYear', 'centralVariantId', 'variantName', 
+    'price', 'Insurance Validity', 'RTO', 'Color', 'Engine Type', 'No of Cylinder', 
+    'Value Configuration', 'Fuel Suppy System', 'Turbo Charger', 'Super Charger', 
+    'Gear Box', 'Drive Type', 'Steering Type', 'Front Brake Type', 'Rear Brake Type'
+]
+
+# Apply Min-Max scaling to the specified numerical columns in chennai_cars_df
+chennai_cars_df[numerical_columns] = scaler.fit_transform(chennai_cars_df[numerical_columns])
+
+
+
+# Initialize the MinMaxScaler
+scaler = MinMaxScaler()
+
+# List of all numerical columns for Min-Max scaling
+numerical_columns = [
+    'price', 'ft_Cng', 'ft_Diesel', 'ft_Electric','ft_Petrol', 
+    'Registration Year', 'km', 'Engine Displacement', 'Year of Manufacture', 
+    'Height', 'Kerb Weight', 'Seating Capacity', 'Cargo Volumn', 
+    'bt_Hatchback', 'bt_MUV', "ownerNo", "Mileage", "Torque", "Values per Cylinder",
+    'bt_SUV', 'bt_Sedan', 'transmission_Automatic', 'transmission_Manual', "Wheel Base", 
+    'oem', 'model', 'modelYear', 'centralVariantId', 'variantName', 
+    'price', 'Insurance Validity', 'RTO', 'Color', 'Engine Type', 'No of Cylinder', 
+    'Value Configuration', 'Fuel Suppy System', 'Turbo Charger', 'Super Charger', 
+    'Gear Box', 'Drive Type', 'Steering Type', 'Front Brake Type', 'Rear Brake Type'
+]
+
+# Apply Min-Max scaling to the specified numerical columns in chennai_cars_df
+bangalore_cars_df[numerical_columns] = scaler.fit_transform(bangalore_cars_df[numerical_columns])
+
+
+
+
+
+
+
+
+
+
+
